@@ -17,15 +17,18 @@ export default function App() {
       // marginLeft: '10%'
     },
   });
-  
+
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <View style={styles.container}>
-        <Text style={{fontSize: 20}}>Hi, my name is Devin!</Text>
-        <Text>This is my first React Native app!</Text>
-        <Button title={clicked ? 'nice' : 'click me'} onPress={() => setClicked(true)} />
+    <>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <View style={styles.container}>
+          <Text style={{fontSize: 20}}>Hi, my name is Devin!</Text>
+          <Text>This is my first React Native app!</Text>
+          <Button title={clicked ? 'nice' : 'click me'} onPress={() => setClicked(true)} />
+        </View>
       </View>
-    </View>
+      <StatusBar />
+    </>
   );
 }
 
